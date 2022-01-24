@@ -1,6 +1,15 @@
 n = 5
 m = 100
-maximum = Math.max(n,m)
-minimum = Math.min(n,m)
-number = (((Math.round(Math.random()*(maximum - minimum)) + minimum)* 2 + 1) / 2)
-console.log(number)
+
+max = Math.max(m,n) + 1
+min = Math.min(m,n) + 1
+range = Math.abs(max - min)
+random_num = Math.floor(Math.random() * range + min)
+ost = 1 - (random_num % 2)
+num_in_range = (random_num - ost)
+//console.log(max)
+//console.log(min)
+//console.log(range)
+//console.log(random_num)
+//console.log(ost)
+console.log(num_in_range)
