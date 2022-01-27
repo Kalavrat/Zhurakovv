@@ -1,10 +1,3 @@
-x1 = 10;
-y1 = 5;
-x2 = 4;
-y2 = 1;
+let password = "20_22"
 
-kat1 = Math.abs(x1 - x2)
-kat2 = Math.abs(y1 - y2)
-S = kat1 * kat2
-
-console.log(S)
+password.length >= 4 && (password.includes("-") || password.includes("_")) ? console.log("Пароль надежный") : console.log("Пароль недостаточно надежный")

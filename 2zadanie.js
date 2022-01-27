@@ -1,24 +1,25 @@
-a = 4.451252664
-b = 5.19
-n = 4
+let name = "Антон"
+let surname = "Жураков"
 
-a = a * 10 ** n
-console.log(a)
-ost_a = a % 1
-console.log(ost_a)
-a = a - ost_a
-console.log(a)
-a = a / 10 ** n
-console.log(a) 
+nameNotChecked = name.substr(1) 
+nameNotChecked2 = name.substr(0, 1)
 
-b = b * 10 ** n
-console.log(b)
-ost_b = b % 1
-console.log(ost_b)
-a = a - ost_b
-console.log(b)
-a = a / 10 ** n
-console.log(b)
+surnameNotChecked = surname.substr(1) 
+surnameNotChecked2 = surname.substr(0, 1)
 
-console.log(a == b)
-console.log(a > b)
+nameChecked = nameNotChecked.toLowerCase()
+nameChecked = nameNotChecked2.toUpperCase() + nameChecked
+console.log(nameChecked)
+
+surnameChecked = surnameNotChecked.toLowerCase()
+surnameChecked = surnameNotChecked2.toUpperCase() + surnameChecked
+console.log(surnameChecked)
+
+if (name != nameChecked || surname != surnameChecked) 
+{
+    console.log("Имя было преобразовано")
+}
+else
+{
+    console.log("Имя осталось без измениений")
+}
